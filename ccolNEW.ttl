@@ -1,0 +1,71 @@
+Farms     ; 1   Farms
+ForstryFsh; 2   Forestry, fishing, and related activities
+OilGasExtr; 3   Oil and gas extraction
+Mining    ; 4   Mining, except oil and gas
+MiningSupt; 5   Support activities for mining
+Utilities ; 6   Utilities
+Cnstrction; 7   Construction
+WoodProds ; 8   Wood products
+NonmetlPrd; 9   Nonmetallic mineral products
+PrmryMetal; 10  Primary metals
+FabMetlPrd; 11  Fabricated metal products
+Machinry  ; 12  Machinery
+ComputrMfg; 13  Computer and electronic products
+ElecrEqpt ; 14  Electrical equipment, appliances, and components
+MotorVeh  ; 15  Motor vehicles, bodies and trailers, and parts
+OthTranspt; 16  Other transportation equipment
+Furniture ; 17  Furniture and related products
+MiscMfg   ; 18  Miscellaneous manufacturing
+FoodBevMfg; 19  Food and beverage and tobacco products
+Textiles  ; 20  Textile mills and textile product mills
+Apparel   ; 21  Apparel and leather and allied products
+PaperProd ; 22  Paper products
+Printing  ; 23  Printing and related support activities
+Petroleum ; 24  Petroleum and coal products
+Chemicals ; 25  Chemical products
+Plastics  ; 26  Plastics and rubber products
+WhlsleTrad ; 27  Wholesale trade
+RtlMotorVe; 28  Motor vehicle and parts dealers
+RtlFoodBev; 29  Food and beverage stores
+RtlGenMerc; 30  General merchandise stores
+RtlOther  ; 31  Other retail
+AirTrans  ; 32  Air transportation
+RailTrans ; 33  Rail transportation
+WaterTrans; 34  Water transportation
+TruckTrans; 35  Truck transportation
+Transit   ; 36  Transit and ground passenger transportation
+Pipelines ; 37  Pipeline transportation
+OtherTrans; 38  Other transportation and support activities
+Warehouse ; 39  Warehousing and storage
+Publishing; 40  Publishing industries, except internet (includes software)
+MotionPict; 41  Motion picture and sound recording industries
+Broadcast ; 42  Broadcasting and telecommunications
+Infrmation; 43  Data processing, internet publishing, and other information services
+Banks     ; 44  Federal Reserve banks, credit intermediation, and related activities
+Investing ; 45  Securities, commodity contracts, and investments
+Insurance ; 46  Insurance carriers and related activities
+FundsTrust; 47  Funds, trusts, and other financial vehicles
+RealEstate; 48  Real estate
+RentLease ; 49  Rental and leasing services and lessors of intangible assets
+LegalServ ; 50  Legal services
+CompterDes; 51  Computer systems design and related services
+MiscProfes; 52  Miscellaneous professional, scientific, and technical services
+Management; 53  Management of companies and enterprises
+AdminSuppt; 54  Administrative and support services
+WasteMgt  ; 55  Waste management and remediation services
+EducServ  ; 56  Educational services
+AmbulHlth ; 57  Ambulatory health care services
+Hospitals ; 58  Hospitals
+NursResCar; 59  Nursing and residential care facilities
+SocAsstanc; 60  Social assistance
+ArtsSports; 61  Performing arts, spectator sports, museums, and related activities
+Amusments ; 62  Amusements, gambling, and recreation industries
+Accommod  ; 63  Accommodation
+FoodServ  ; 64  Food services and drinking places
+OthServ   ; 65  Other services, except government
+FedGvt    ; 66  Federal general government
+FedGvtEnt ; 67  Federal government enterprises
+StLGvt    ; 68  State and local general government
+StLGvtEnt ; 69  State and local government enterprises
+Scrap     ; 70  Scrap, used and secondhand goods
+NoncomImp ; 71  Noncomparable imports and rest-of-the-world adjustment
