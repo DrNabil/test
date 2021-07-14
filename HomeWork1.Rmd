@@ -1,0 +1,77 @@
+---
+title: "HomeWork"
+author: "Dr.Nabil"
+date: "6/18/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Linear regression
+
+## The data is called "CPS1985"
+
+### Dependent Variable is: wage
+
+### Independent Varaibles are: education,experience,age.
+
+
+```{r echo=TRUE,include=TRUE}
+library(carData)
+library(car)
+library(AER)
+library(dplyr)
+library(sandwich)
+library(survival)
+library(car)
+library(ggplot2)
+library(effects)
+library(multcompView)
+library(broom)
+library(equatiomatic)
+```
+# now we have donwnloaded the required packages
+```{r echo=TRUE,include=TRUE}
+data("CPS1985")
+df<-CPS1985
+```
+# now we have donwnloaded the data that we are going to work on. 
+```{r echo=TRUE,include=TRUE}
+View(df)
+names(df)
+summary(df)
+```
+```{r echo=TRUE,include=TRUE}
+func<-as.data.frame(df[c("wage","education","experience","age")])
+cor(func)
+scatterplotMatrix(func)
+lm<-lm(wage~education+experience+age,data = df)
+```
+```{r echo=TRUE,include=TRUE}
+summary(lm)
+tidy(lm)
+glance(lm)
+
+```
+```{r echo=TRUE,include=TRUE}
+extract_eq(lm,use_coefs = TRUE)
+```
+```{r echo=TRUE,include=TRUE}
+lm1<-lm(wage~education+experience+age+experience:age,data=df)
+tidy(lm1)
+glance(lm1)
+extract_eq(lm1, use_coefs = TRUE)
+```
+# The accepted linear regression model is:
+# wage= -4.79114 + 1.260986 (education) + 0.655438 (experience) - 0.299146 (age) - 0.004089 (experience x age)
+
+  because there is an interaction between experience and age as logically the experience increases when the age increases. In addition, the "tidy(lm1) shows that the interaction between experience and age is statistically significant.
+   if we fix the variable "age (making it as a default) at the values 9, 35, 64 , we will have the follwing equations:
+    -In case that age=9......... wage=-7.4834 + 1.260986 (education) + 0.6554 (experience)
+    - In case that age=35....... wage=-15.2612 + 1.260986 (education) + 0.5123 (experience)
+    - In case that age=64....... wage=-23.9364 + 1.260986 (education) + 0.3938 (experience) 
+      
+    In all cases the results are logic as the wage is correlated posively with the education and experience.
+                                         
